@@ -1,0 +1,26 @@
+button{
+    width: 100%;
+    background-color: #40a02b;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-size: 17px;
+    margin-bottom:10px;
+    margin-top:10px;
+    border:0px;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: #2ba050;
+}
+
+@media (prefers-color-scheme: dark){
+    button{
+        background-color: #a6da95;
+        color: black;
+    }
+    button:hover{
+        background-color: #95daa7;
+    }
+}

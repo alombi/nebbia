@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import "scss/blog.scss";
+@import "scss/form.scss";
+@import "scss/grid.scss";
+@import "scss/button.scss";
+@import "scss/nav.scss";
+
+// https://www.colorhexa.com/a6da95
+// https://www.colorhexa.com/40a02b
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 65px;
+    color:#4c4f69;
+    background-color: #eff1f5;
+    box-sizing: border-box;
+	min-width: 200px;
+	max-width: 1080px;
+	margin: 0 auto;
+    a{
+        color:#40a02b;
+        text-decoration: none;
+        padding:8px 5px;
+        border-radius: 8px;
+
+    }
+    a:hover{
+        text-decoration: underline;
+    //     background-color: #a6da951a;
+    }
+    a,p{
+        font-size: 17px;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        padding: 15px;
+    }
+}
+
+
+// .title{
+//     padding-left: 30px;
+//     margin-bottom: 70px;
+//     h2{
+//         margin-top: -15px;
+//         opacity: 0.8;
+//     }
+//}
+
+
+// #box-title{
+//     padding-left: 15px;
+// }
+// .box-container{
+//     padding-left:15px;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     grid-gap: 18px;
+//     justify-content: center;
+//     .box{
+//         // background-color: #f6f6f6;
+//         background-color: #dce0e8;
+//         padding: 5px 10px;
+//         border-radius: 8px;
+//         p{
+//             opacity: 0.7;
+//             margin-top: -20px;
+//         }
+//         .pill-container{
+//             display: flex;
+//             .pill{
+//                 margin-top: -5px;
+//                 font-size: 14px;
+                
+//                 opacity: 1;
+//                 padding: 4px 9px;
+//                 border-radius: 10px;
+//             }
+//             .red{
+//                 color: #ed8796;
+//                 background-color: #ed87961a;
+//             }
+//             .orange{
+//                 color: #f5a97f;
+//                 background-color: #f5a97f1a; 
+//             }
+//             .light-blue{
+//                 color: #7dc4e4;
+//                 background-color: #7dc4e41a; 
+//             }
+//             .yellow{
+//                 color: #eed49f;
+//                 background-color: #eed49f1a;
+//             }
+//             .green{
+//                 color:#a6d189;
+//                 background-color: #a6d1891a;
+//             }
+//         }
+//     }
+//     .box:hover{
+//         opacity: 0.8;
+//     }
+//     .social{
+//         text-align: center;
+//     }
+//     a:hover, a{
+//         padding: 0px;
+//         background-color: none;
+//         color: unset;
+//         text-decoration: none;
+//     }
+// }
+// .box-container-2{
+//     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+// }
+
+// .blog_image{
+//     padding-top: 10px;
+//     width: 80%;
+//     margin: auto;
+//     display: block;
+// }
+// .blog_image_small{
+//     width: 70%;
+// }
+
+// .content{
+//     padding-left: 5px;
+// }
+
+
+@media (max-width:950px) {
+    nav{
+        div:nth-child(1){
+            margin-left: 5px;
+        }
+        div:nth-child(2){
+            margin-right: 5px;
+        }
+    }
+    .title{
+        padding-left: 10px;
+    }
+    .box-container-2{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .box-container, #box-title, .box-container-2{
+        padding-left: 0px;
+    }
+}
+@media (prefers-color-scheme: dark){
+    body{
+        // background-color: #1c1c1c;
+        background-color: #24273a;
+        color:#cad3f5;
+        a{
+            color:#a6da95;
+        }
+        nav{
+            a:hover{
+                background-color:#a6da951a;
+            }
+        }
+    }
+    .box-container{
+        .box{
+            // background-color: #333333;
+            background-color: #363a4f;
+        }
+    }
+    
+    
+}
+
+
+// BLOG
+blockquote{
+    color: #6c6f85;
+}
+.text > p{
+    font-size: 17px;
+}
+@media (prefers-color-scheme: dark){
+    blockquote{
+        color:#a5adcb
+    }
+}

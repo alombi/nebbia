@@ -1,0 +1,43 @@
+blockquote{
+    color: #6c6f85;
+}
+@media (prefers-color-scheme: dark){
+    blockquote{
+        color:#a5adcb
+    }
+}
+
+.blog-title{
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.blog-title h2{
+    font-size: 0.8rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+$radius: 6px;
+$margin-top: 40px;
+.blog_image, .blog-image{
+    width: 65%;
+    margin: auto;
+    margin-top:$margin-top;
+    display: block;
+    border-radius: $radius;
+}
+.blog_image_small, .blog-image-small{
+    margin: auto;
+    margin-top:$margin-top;
+    display: block;
+    border-radius: $radius;
+    width: 45%;
+}
+.blog_image_very_small, .blog-image-very-small{
+    width: 30%;
+    margin: auto;
+    margin-top:$margin-top;
+    display: block;
+    border-radius: $radius;
+}
