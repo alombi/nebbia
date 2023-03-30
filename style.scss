@@ -173,17 +173,3 @@ body{
     
     
 }
-
-
-// BLOG
-blockquote{
-    color: #6c6f85;
-}
-.text > p{
-    font-size: 17px;
-}
-@media (prefers-color-scheme: dark){
-    blockquote{
-        color:#a5adcb
-    }
-}
